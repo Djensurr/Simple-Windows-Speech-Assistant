@@ -11,8 +11,6 @@ import webbrowser
 WAKE_WORD_FILE = # Path to your Picovoice Wake word file (.ppn)
 ACCESS_KEY = # Your Picovoice key
 
-
-
 # Speech Recognition
 recognizer = sr.Recognizer()
 
@@ -52,9 +50,6 @@ def run_command(command):
 
     elif "google maps" in command:
         webbrowser.open("https://www.google.com/maps")
-    
-    elif "brightspace" in command or "bride space" in command or "right space" in command:
-        webbrowser.open("https://brightspace.ru.nl/d2l/home")
 
     elif "email" in command:
         webbrowser.open("https://outlook.live.com/mail/0/")
